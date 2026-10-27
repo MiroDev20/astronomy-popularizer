@@ -13,7 +13,10 @@
     <main class="page">
         <header class="profile">
             <div class="profile__container">
-                <img src="assets/images/profile/mateo.jpg" alt="Retrato de Mateo Ríos" class="profile__picture">
+                <img
+                    class="profile__picture"
+                    src="assets/images/profile/mateo.jpg"
+                    alt="Retrato de Mateo Ríos">
                 <h1 class="profile__name">Mateo Ríos</h1>
             </div>
             <div class="profile__bio">
@@ -22,37 +25,70 @@
                 </p>
             </div>
         </header>
-        <nav class="social-links">
+        <nav class="social-links" aria-label="Redes sociales de Mateo Ríos">
             <ul class="social-links__list">
                 <li class="social-links__item social-links__item--youtube">
-                    <div class="social-links__icon social-links__icon--youtube">
-                        <img src="./assets/icons/png/youtube.png" alt="">
-                    </div>
-                    <div class="social-links__description">
+                    <a
+                        class="social-links__link"
+                        href="https://www.youtube.com/@universoaescala"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visitar Universo a Escala en YouTube (se abre en una pestaña nueva)" aria-describedby="youtube-description">
+                        <span class="social-links__icon social-links__icon--youtube" aria-hidden="true">
+                            <img src="./assets/icons/png/youtube.png" alt="">
+                        </span>
+                        <span class="social-links__platform">YouTube</span>
+                    </a>
+                    <div class="social-links__description" id="youtube-description">
                         <p>Publico videos sobre agujeros negros, planetas, galaxias, misiones espaciales y conceptos astronómicos explicados para principiantes.</p>
                     </div>
                 </li>
                 <li class="social-links__item social-links__item--instagram">
-                    <div class="social-links__icon social-links__icon--instagram">
-                        <img src="./assets/icons/png/instagram.png" alt="">
-                    </div>
-                    <div class="social-links__description">
+                    <a
+                        class="social-links__link"
+                        href="https://www.instagram.com/universoaescala/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Seguir a Universo a Escala en Instagram (se abre en una pestaña nueva)" aria-describedby="instagram-description">
+                        <span class="social-links__icon social-links__icon--instagram" aria-hidden="true">
+                            <img src="./assets/icons/png/instagram.png" alt="">
+                        </span>
+                        <span class="social-links__platform">Instagram</span>
+                    </a>
+                    <div class="social-links__description" id="instagram-description">
                         <p>Comparto fotografías astronómicas, carruseles educativos, ilustraciones, curiosidades y fragmentos de mis videos.</p>
                     </div>
                 </li>
                 <li class="social-links__item social-links__item--x">
-                    <div class="social-links__icon social-links__icon--x">
-                        <img src="./assets/icons/png/twitter-x.png" alt="">
-                    </div>
-                    <div class="social-links__description">
+                    <a
+                        class="social-links__link"
+                        href="https://x.com/UniversoEscala"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Leer a Universo a Escala en X (se abre en una pestaña nueva)" aria-describedby="x-description">
+                        <span class="social-links__icon social-links__icon--x" aria-hidden="true">
+                            <img src="./assets/icons/png/twitter-x.png" alt="">
+                        </span>
+                        <span class="social-links__platform">X</span>
+                    </a>
+                    <div class="social-links__description" id="x-description">
                         <p>Comento noticias espaciales, comparto enlaces a investigaciones y misiones, publico observaciones breves y converso con otros aficionados.</p>
                     </div>
                 </li>
                 <li class="social-links__item social-links__item--astrobin">
-                    <div class="social-links__icon social-links__icon--astrobin">
-                        <img src="./assets/icons/png/astrobin.png" alt="">
-                    </div>
-                    <div class="social-links__description">
+                    <a
+                        class="social-links__link"
+                        href="https://www.astrobin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Explorar las fotografías de Universo a Escala en AstroBin (se abre en una pestaña nueva)"
+                        aria-describedby="astrobin-description">
+                        <span class="social-links__icon social-links__icon--astrobin" aria-hidden="true">
+                            <img src="./assets/icons/png/astrobin.png" alt="">
+                        </span>
+                        <span class="social-links__platform">AstroBin</span>
+                    </a>
+                    <div class="social-links__description" id="astrobin-description">
                         <p>Publico mis mejores fotografías del cielo y documento, cuando corresponde, los equipos y las condiciones de captura.</p>
                     </div>
                 </li>
@@ -69,39 +105,84 @@
                     muted
                     loop
                     playsinline
-                    preload="metadata">
+                    preload="metadata"
+                    aria-describedby="highlight-caption">
                     Tu navegador no soporta video HTML5.
                 </video>
-                <figcaption class="highlight__caption">
+                <figcaption id="highlight-caption" class="highlight__caption">
                     ¿Qué veríamos si pudiéramos acercarnos a un agujero negro?
                 </figcaption>
             </figure>
         </section>
-        <section class="carousel">
+        <section
+            class="carousel"
+            aria-labelledby="gallery-title"
+            aria-roledescription="carrusel">
+            <h2 id="gallery-title" class="visually-hidden">Galería de astrofotografía</h2>
             <div class="carousel__viewport">
                 <ul class="carousel__track">
-                    <li class="carousel__slide carousel__slide--active">
-                        <img class="carousel__image" src="foto-1.jpg" alt="Nebulosa de Orión capturada desde Bogotá">
+                    <li
+                        class="carousel__slide carousel__slide--active"
+                        role="group"
+                        aria-roledescription="diapositiva"
+                        aria-label="1 de 3">
+                        <img
+                            class="carousel__image"
+                            src="./assets/images/space/nebulosa-carmesi-filamentos-azules.png"
+                            alt="Nebulosa carmesí con filamentos azules entre estrellas">
                     </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="foto-2.jpg" alt="Vía Láctea sobre el desierto de La Tatacoa">
+                    <li
+                        class="carousel__slide"
+                        role="group"
+                        aria-roledescription="diapositiva"
+                        aria-label="2 de 3">
+                        <img
+                            class="carousel__image"
+                            src="./assets/images/space/nebulosa-colores-entre-estrellas.png"
+                            alt="Nebulosa multicolor entre estrellas del espacio profundo">
                     </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="foto-3.jpg" alt="Saturno con anillos visibles">
+                    <li
+                        class="carousel__slide"
+                        role="group"
+                        aria-roledescription="diapositiva"
+                        aria-label="3 de 3">
+                        <img
+                            class="carousel__image"
+                            src="./assets/images/space/panorama-nebulosas-doradas-estrellas.png"
+                            alt="Panorama de nebulosas doradas y estrellas">
                     </li>
                 </ul>
             </div>
             <!-- NOTE: reemplazar < y > por iconos reales -->
-            <button class="carousel__button carousel__button--prev" type="button">
-                <span>‹</span>
+            <button
+                class="carousel__button carousel__button--prev"
+                type="button"
+                aria-label="Ver imagen anterior">
+                <span aria-hidden="true">‹</span>
             </button>
-            <button class="carousel__button carousel__button--next" type="button">
-                <span>›</span>
+            <button
+                class="carousel__button carousel__button--next"
+                type="button"
+                aria-label="Ver imagen siguiente">
+                <span aria-hidden="true">›</span>
             </button>
             <div class="carousel__pagination">
-                <button class="carousel__dot carousel__dot--active" type="button"></button>
-                <button class="carousel__dot" type="button"></button>
-                <button class="carousel__dot" type="button"></button>
+                <button
+                    class="carousel__dot carousel__dot--active"
+                    type="button"
+                    aria-label="Mostrar imagen 1 de 3"
+                    aria-current="true">
+                </button>
+                <button
+                    class="carousel__dot"
+                    type="button"
+                    aria-label="Mostrar imagen 2 de 3">
+                </button>
+                <button
+                    class="carousel__dot"
+                    type="button"
+                    aria-label="Mostrar imagen 3 de 3">
+                </button>
             </div>
         </section>
     </main>
