@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <g id="caja-planeta-blanco">
+    
+    <!-- Interior de la caja y solapas traseras -->
+    <polygon points="160,230 310,200 400,250 220,290" fill="#FFFFFF" fill-opacity="0.4" />
+    
+    <!-- Solapa izquierda -->
+    <polygon points="90,230 220,290 160,230 50,200" fill="#FFFFFF" fill-opacity="0.6" />
+    
+    <!-- Solapa derecha -->
+    <polygon points="400,250 220,290 310,200 450,220" fill="#FFFFFF" fill-opacity="0.7" />
+
+    <!-- Planeta con anillo (Mitad trasera del anillo) -->
+    <ellipse cx="260" cy="200" rx="110" ry="30" transform="rotate(-15 260 200)" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-opacity="0.5" />
+
+    <!-- Cuerpo del Planeta -->
+    <circle cx="260" cy="200" r="60" fill="#FFFFFF" fill-opacity="0.9" />
+
+    <!-- Mitad delantera del anillo -->
+    <path d="M 155,220 C 180,260 340,240 365,190 C 340,215 180,235 155,220 Z" fill="#FFFFFF" fill-opacity="0.9" />
+
+    <!-- Cara frontal izquierda de la caja -->
+    <polygon points="100,370 220,420 220,290 100,240" fill="#FFFFFF" fill-opacity="0.75" />
+
+    <!-- Cara frontal derecha de la caja -->
+    <polygon points="220,420 400,380 400,250 220,290" fill="#FFFFFF" fill-opacity="0.95" />
+
+    <!-- Letra "A" recortada en la cara derecha (se usa el color del fondo para hacer el efecto de recorte) -->
+    <path d="M .31,.78 L .49,.18 L .66,.18 L .86,.78 L .69,.78 L .64,.61 L .43,.61 L .38,.78 Z M .48,.45 L .60,.45 L .54,.29 Z" transform="matrix(180 -40 0 130 220 290)" fill="#222222" />
+    
+  </g>
+</svg>
