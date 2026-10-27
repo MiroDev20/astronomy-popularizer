@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Universo a Escala: astronomía, exploración espacial y astrofotografía para mentes curiosas.">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Universo a Escala | Mateo Ríos</title>
+</head>
+<body>
+    <main class="page">
+        <header class="profile">
+            <div class="profile__container">
+                <img src="assets/images/profile/mateo.jpg" alt="Retrato de Mateo Ríos" class="profile__picture">
+                <h1 class="profile__name">Mateo Ríos</h1>
+            </div>
+            <div class="profile__bio">
+                <p class="profile__description">
+                    Estudio el universo y comparto lo que voy aprendiendo. Astronomía, exploración espacial y fotografía del cielo para mentes curiosas
+                </p>
+            </div>
+        </header>
+        <nav class="social-links">
+            <ul class="social-links__list">
+                <li class="social-links__item social-links__item--youtube">
+                    <div class="social-links__icon social-links__icon--youtube">
+                        <img src="./assets/icons/png/youtube.png" alt="">
+                    </div>
+                    <div class="social-links__description">
+                        <p>Publico videos sobre agujeros negros, planetas, galaxias, misiones espaciales y conceptos astronómicos explicados para principiantes.</p>
+                    </div>
+                </li>
+                <li class="social-links__item social-links__item--instagram">
+                    <div class="social-links__icon social-links__icon--instagram">
+                        <img src="./assets/icons/png/instagram.png" alt="">
+                    </div>
+                    <div class="social-links__description">
+                        <p>Comparto fotografías astronómicas, carruseles educativos, ilustraciones, curiosidades y fragmentos de mis videos.</p>
+                    </div>
+                </li>
+                <li class="social-links__item social-links__item--x">
+                    <div class="social-links__icon social-links__icon--x">
+                        <img src="./assets/icons/png/twitter-x.png" alt="">
+                    </div>
+                    <div class="social-links__description">
+                        <p>Comento noticias espaciales, comparto enlaces a investigaciones y misiones, publico observaciones breves y converso con otros aficionados.</p>
+                    </div>
+                </li>
+                <li class="social-links__item social-links__item--astrobin">
+                    <div class="social-links__icon social-links__icon--astrobin">
+                        <img src="./assets/icons/png/astrobin.png" alt="">
+                    </div>
+                    <div class="social-links__description">
+                        <p>Publico mis mejores fotografías del cielo y documento, cuando corresponde, los equipos y las condiciones de captura.</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section class="highlight">
+            <h2 id="highlight__title" class="highlight__title">Contenido destacado</h2>
+            <figure class="highlight__figure">
+                <video
+                    class="highlight__video"
+                    src="./assets/video/Interstellar Gargantua black hole 4K live wallpaper for free windows 7_8_10_11(2K_60FPS).mp4"
+                    poster="./assets/video/portada__que-veríamos-si-nos-acercáramos-a-un-agujero-negro.png"
+                    controls
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata">
+                    Tu navegador no soporta video HTML5.
+                </video>
+                <figcaption class="highlight__caption">
+                    ¿Qué veríamos si pudiéramos acercarnos a un agujero negro?
+                </figcaption>
+            </figure>
+        </section>
+        <section class="carousel">
+            <div class="carousel__viewport">
+                <ul class="carousel__track">
+                    <li class="carousel__slide carousel__slide--active">
+                        <img class="carousel__image" src="foto-1.jpg" alt="Nebulosa de Orión capturada desde Bogotá">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="foto-2.jpg" alt="Vía Láctea sobre el desierto de La Tatacoa">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="foto-3.jpg" alt="Saturno con anillos visibles">
+                    </li>
+                </ul>
+            </div>
+            <!-- NOTE: reemplazar < y > por iconos reales -->
+            <button class="carousel__button carousel__button--prev" type="button">
+                <span>‹</span>
+            </button>
+            <button class="carousel__button carousel__button--next" type="button">
+                <span>›</span>
+            </button>
+            <div class="carousel__pagination">
+                <button class="carousel__dot carousel__dot--active" type="button"></button>
+                <button class="carousel__dot" type="button"></button>
+                <button class="carousel__dot" type="button"></button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
