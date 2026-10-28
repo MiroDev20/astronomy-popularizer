@@ -1,0 +1,40 @@
+/* ==== PROPERTYS ==== */
+:root {
+    /* ==== colors ==== */
+    --azul-noche: #191970;
+    --azul-espacial: #0B1D3A;
+    --cian: #22D3EE;  
+    --violeta: #8F00FF;
+    --blanco-frio: #F5F7FA;
+}
+
+/* ==== RESETS ==== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, img, span, button {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
