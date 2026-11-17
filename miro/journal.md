@@ -46,9 +46,11 @@ desarrollo para agilizar la implementación**
 
 #### Lo que hice
 
-- [Cambio, funcionalidad o experimento realizado]
-- [Archivos, componentes o áreas del proyecto que modifiqué]
-- [Herramientas o tecnologías utilizadas, solo si son relevantes]
+- Creé fondos visuales para los contenedores de enlaces de las plataformas.
+- Reemplacé la fotografía de perfil de Mateo por una imagen generada con IA.
+- Optimicé los recursos multimedia con compresores web para reducir su peso.
+- Organicé imágenes, iconos y video en una estructura semántica dentro de
+  `assets/`.
 
 #### Decisiones técnicas
 
