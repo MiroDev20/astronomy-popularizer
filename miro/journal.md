@@ -1,6 +1,6 @@
 # 🌌 Journal
 
-![](./assets/images/journal-banner.png)
+![banner](./assets/images/journal-banner.png)
 
 La idea es crear una página Link in Bio para un divulgador que estudia
 astronomía por cuenta propia, comparte contenido educativo en redes sociales
@@ -73,9 +73,100 @@ sesión.
 
 ### 👣 Próximos pasos
 
-- [ ] Estructurar la página
-- [ ] Construir HTML semántico.
+- [x] Estructurar la página
+- [x] Construir HTML semántico.
 
 **Punto de reanudación:** `index.html`
+
+---
+
+## 📅 16-11-26 — Maquetación
+
+### 🎯 Estructurar la página
+
+**Organizar, dar formato semántico y accesible al contenido de la página para
+un mejor performance en las tecnologías que lo usarán.**
+
+- Ordenar perfil, enlaces, contenido destacado, galería, recursos, evento y contacto.
+- Construir HTML semántico e incorporar metadatos de SEO y compartición.
+
+**Criterio de éxito:** El contenido tiene una jeraquía clara, semántica y
+accesible. Adjuntaré el hash del commit y captura de la evaluación hecha en [NumLM Tools](https://tools.numlm.com/seo/seo-analyzer/?utm_source=chatgpt.com).
+
+### 🧭 Plan de trabajo
+
+- [x] Agregar metadatos básicos.
+- [x] Seleccionar la multimedia y estructurarlas con las etiquetas más adecuadas.
+- [x] Dar clases a las etiquetas con BEM.
+- [x] Agregar etiquetas para accesibilidad.
+- [x] Añadir atributos data-* para lógica JavaScript.
+
+### 🎧 Lo que escuché en la sesión
+
+- **Álbum o canción:** spring mornings. 🌸 studio ghibli style lofi mix
+- **Artista:** The Jazz Hop Café
+- **Escuché en:** YouTube
+- **Enlace:** https://www.youtube.com/watch?v=wePMdTNW3C4
+
+### 🛠️ Trabajo realizado
+
+#### Lo que hice
+
+- Estructuré la página principal como una link in bio accesible para Mateo
+    Ríos, usando etiquetas semánticas, jerarquía de encabezados, navegación por
+    secciones y pie de contacto.
+- Añadí metadatos básicos de SEO, clases con convención BEM y atributos
+    `data-*` para separar los estilos de la lógica del carrusel.
+- Mejoré la accesibilidad mediante textos alternativos, enlace para saltar al
+    contenido principal, foco visible, controles de carrusel operables con
+    teclado y anuncios de cambios para lectores de pantalla.
+- Modifiqué `index.html` y añadí `assets/styles/accessibility.css` y `assets/scripts/carousel.js`.
+- Utilicé HTML5, CSS y JavaScript vanilla, además de una revisión de
+    accesibilidad y validación de sintaxis del script.
+
+#### Decisiones técnicas
+
+- **Decisión:** Separar identificadores para estilos y lógica: clases para estilos y atributos `data-*` para lógica.
+- **Motivo:** Mantener de forma idependiente ambos aspectos del proyecto.
+- **Alternativas:** Usar clases para ambos objetivos.
+
+#### Evidencia del progreso
+
+- **Commit:** `c133d0ae0f94f921a0f36aeb70431bca2b04d6c2`
+- **Captura o demo:** ![puntuación](./assets/images/numlm-analysis.png) ![detalles](./assets/images/numlm-details.png)
+
+#### Recursos consultados
+
+- [NumLM Tools](https://tools.numlm.com/seo/seo-analyzer/?utm_source=chatgpt.com) — Realicé una inspección de mi documento HTML.
+
+### 🧪 Comprobación del resultado
+
+**¿Cómo comprobé que funciona?**
+
+- [x] Comprobé que `index.html` carga los archivos de estilos y JavaScript.
+- [x] Realicé una inspección con NumLM Tools.
+
+**Resultado observado:** La estructura y la sintaxis son correctas. Tienen una
+puntuación aceptable.
+
+### ✅ Cierre de la sesión
+
+**Resultado concreto:** Estructura HTML organizada y semántica.
+
+**Estado del proyecto tras la sesión:** Listo para realizar el diseño.
+
+**Deuda técnica o mejora futura:** Añadir o corregir las observaciones de NumLM Tools.
+
+En cuanto a los recursos que tienen un tamaño un poco mayor que el de sus
+hermanos lo corregiré con CSS.
+
+### 👣 Próximos pasos
+
+- [ ] Realizar el diseño de la página.
+
+**Próximo objetivo de aprendizaje:** CSS organizado y modularizado, correcto uso
+del nesting y popover.
+
+**Punto de reanudación:** `./assets/styles/main.css`
 
 ---
