@@ -172,3 +172,90 @@ del nesting y popover.
 **Punto de reanudación:** `./assets/styles/main.css`
 
 ---
+
+## 📅 17-11-26 — Diseño con AI
+
+### Aplicar estilo a la página
+
+**Realizaré el estilo de la página, pero no a mano, usaré la skill `IMPECCABLE`
+ya que cuando atienda varios clientes a la vez necesito ser veloz**
+
+- Aplicar paleta nocturna y jerarquía tipográfica.
+- Implementar adaptación para móvil, tableta y escritorio.
+- Añadir enlaces, galería y componentes interactivos con JavaScript vanilla.
+- Aplicar movimiento solo si respeta `prefers-reduced-motion`.
+
+**Criterio de éxito:** adjuntaré el hash del commit y capturea del resultado.
+
+### 🧭 Plan de trabajo
+
+- [ ] Hablaré con GitHub Copilot sobre como realizarlo con Impeccable.
+- [ ] Le daré algunos detalles que debe tener en cuenta.
+- [ ] Y por último le diré que ejecute el prompt resultante de la charla.
+
+### 🎧 Lo que escuché en la sesión
+
+- **Álbum o canción:** 【あつ森】Lofi Night｜雨降る夜に部屋でゆっくりと過ごす☔雨音｜作業・勉強【1時間】
+- **Artista:** Tsumugi's Cozy Tunes
+- **Escuché en:** YouTube
+- **Enlace:** https://www.youtube.com/watch?v=2SV-ueN0hxA
+
+### 🛠️ Trabajo realizado
+
+#### Lo que hice
+
+- Hablé con GitHub Copilot durante un buen rato detallando el objetivo.
+- Le ordené ejecutar la tarea.
+- Relicé un cambio menor en el borde de la foto de perfil.
+
+#### Decisiones técnicas
+
+- **Decisión:** Remover algunos elementos del documento HTML.
+- **Motivo:** Su presencia no entraba en el plan Esencial de mi servicio de
+    Links In Bios.
+- **Alternativas:** Tomé la decisión de realizar después otras dos versiones de
+    mis otros dos planes.
+
+#### Evidencia del progreso
+
+- **Commit:** `8ab34aa7f45b18af662561cba1f47d9e38ed47ab`
+- **Captura o demo:** ![preview](./assets/images/preview.png)
+
+### 🧪 Comprobación del resultado
+
+**¿Cómo comprobé que funciona?**
+
+- [x] Probé el comportamiento esperado.
+- [x] Revisé los casos relevantes para este cambio.
+- [x] Comprobé la versión responsive, si corresponde.
+- [x] Revisé errores de consola o herramientas de desarrollo, si corresponde.
+
+**Resultado observado:** Junto con Copilot comprobé que se muestran el perfil,
+los cuatro enlaces y el contacto, y que ya no aparecen el video, las guías ni
+la galería. La página no presentó desbordamiento horizontal en anchos de 320,
+390, 768 y 1440 píxeles. También se revisaron el foco con teclado, el contraste
+de los enlaces y la preferencia de movimiento reducido. Al recargar la página
+no se observaron errores de consola ni recursos fallidos.
+
+### ✅ Cierre de la sesión
+
+**Resultado concreto:** Página Link in Bio del plan Esencial con perfil,
+cuatro enlaces sociales, contacto y diseño responsive.
+
+**Estado del proyecto tras la sesión:** La demostración está implementada y
+comprobada. Los destinos y el correo son datos de ejemplo que deben confirmarse
+antes de publicar una versión con datos reales.
+
+**Deuda técnica o mejora futura:** Debo realizar las versiones de mis otros planes.
+
+### 👣 Próximos pasos
+
+- [ ] Crear ramas para las versiones de los planes Personalizado y A medida.
+- [ ] Definir el alcance de cada versión antes de implementarla.
+
+**Próximo objetivo de aprendizaje:** Trabajar con ramas en Git.
+
+**Punto de reanudación:** `index.html` y `assets/styles/main.css`, como base
+para las versiones de los otros planes.
+
+---
