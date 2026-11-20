@@ -164,7 +164,7 @@ hermanos lo corregiré con CSS.
 
 ### 👣 Próximos pasos
 
-- [ ] Realizar el diseño de la página.
+- [x] Realizar el diseño de la página.
 
 **Próximo objetivo de aprendizaje:** CSS organizado y modularizado, correcto uso
 del nesting y popover.
@@ -189,9 +189,9 @@ ya que cuando atienda varios clientes a la vez necesito ser veloz**
 
 ### 🧭 Plan de trabajo
 
-- [ ] Hablaré con GitHub Copilot sobre como realizarlo con Impeccable.
-- [ ] Le daré algunos detalles que debe tener en cuenta.
-- [ ] Y por último le diré que ejecute el prompt resultante de la charla.
+- [x] Hablaré con GitHub Copilot sobre como realizarlo con Impeccable.
+- [x] Le daré algunos detalles que debe tener en cuenta.
+- [x] Y por último le diré que ejecute el prompt resultante de la charla.
 
 ### 🎧 Lo que escuché en la sesión
 
@@ -250,12 +250,79 @@ antes de publicar una versión con datos reales.
 
 ### 👣 Próximos pasos
 
-- [ ] Crear ramas para las versiones de los planes Personalizado y A medida.
-- [ ] Definir el alcance de cada versión antes de implementarla.
+- [x] Crear ramas para las versiones de los planes Personalizado y A medida.
+- [x] Definir el alcance de cada versión antes de implementarla.
 
 **Próximo objetivo de aprendizaje:** Trabajar con ramas en Git.
 
 **Punto de reanudación:** `index.html` y `assets/styles/main.css`, como base
 para las versiones de los otros planes.
+
+---
+
+## 📅 20-11-26 — Plan A Medida
+
+### 🎯 Diseñar la página del plan A Medida
+
+**Objetivo:** ampliar la Link in Bio con video destacado, astrofotografía,
+guías para principiantes, fondos para las redes y un cielo estrellado animado.
+
+### 🧭 Plan de trabajo
+
+- [x] Crear la rama independiente `feat/plan-a-medida` desde `main`.
+- [x] Integrar el video y una galería de seis imágenes con carrusel JavaScript.
+- [x] Mostrar las tres portadas de las guías existentes.
+- [x] Aplicar los fondos de plataforma ya disponibles a los cuatro enlaces.
+- [x] Adaptar el efecto de estrellas y respetar `prefers-reduced-motion`.
+- [x] Revisar visualmente en navegador los tamaños responsive.
+
+### 🛠️ Trabajo realizado
+
+#### Lo que hice
+
+- Organicé el escritorio en dos columnas: perfil y enlaces a la izquierda;
+    video y galería a la derecha. En pantallas estrechas se apilan.
+- Reutilicé `assets/scripts/carousel.js` mediante sus atributos `data-*`,
+    con seis diapositivas, controles y anuncios accesibles.
+- Adapté la generación de tres capas de estrellas a
+    `assets/scripts/starfield.js`; el movimiento se detiene si el usuario
+    prefiere movimiento reducido.
+- Evité repetir en un encabezado el título que ya aparece en la portada del
+    video.
+- Ajusté la altura de las fotografías para que mantengan una proporción
+    similar a la del video.
+- Oculté la descripción de astrofotografía en escritorio y la conservé en
+    pantallas estrechas.
+- Reemplacé los consejos desplegables por las tres portadas de
+    `assets/images/ebooks/` y moví el contacto al final de la página.
+- Dejé la rama A Medida en la carpeta principal del proyecto; los cambios
+    pendientes de Personalizado quedaron guardados en un stash.
+
+#### Decisiones técnicas
+
+- **Decisión:** reutilizar el carrusel existente y ofrecer desplazamiento
+    horizontal si JavaScript no está disponible.
+- **Motivo:** conservar la lógica de accesibilidad y mantener visible la
+    galería sin depender de JavaScript.
+- **Decisión:** sustituir los consejos desplegables iniciales por las
+    portadas de las guías, sin inventar destinos ni enlaces de descarga.
+- **Decisión:** preparar la entrega con PRs encadenados hacia `main`
+    (`stacked-to-main`), según la elección del usuario.
+
+### 🧪 Comprobación del resultado
+
+- [x] Sintaxis de `carousel.js` y `starfield.js`.
+- [x] Estructura HTML, cantidad de diapositivas y controles, y rutas locales
+    de imágenes y video.
+- [x] Comportamiento del carrusel y generación de las capas de estrellas con
+    elementos DOM simulados.
+- [x] Respuesta HTTP 200 del servidor local y comprobación de whitespace
+    respetando los finales de línea CRLF del proyecto.
+- [x] Revisión de las portadas en móvil y escritorio; imágenes y distribución
+    comprobadas también en tableta.
+- [x] Comprobación de las seis fotografías frente al tamaño del video en
+    anchos de 390, 768 y 1366 píxeles.
+- [x] Comprobación de la visibilidad de la descripción y de la posición del
+    contacto en distintos anchos de pantalla.
 
 ---
