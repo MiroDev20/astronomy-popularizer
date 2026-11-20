@@ -14,103 +14,316 @@
     <title>Universo a Escala | Mateo Ríos</title>
 </head>
 <body>
+    <div class="starfield" aria-hidden="true">
+        <span class="starfield__layer" data-star-layer="small"></span>
+        <span class="starfield__layer" data-star-layer="medium"></span>
+        <span class="starfield__layer" data-star-layer="large"></span>
+    </div>
+
     <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
     <main id="main-content" class="page">
-        <!-- Profile -->
-        <header class="profile">
-            <div class="profile__cover" aria-hidden="true"></div>
-            <div class="profile__content">
-                <img
-                    class="profile__picture"
-                    src="./assets/images/profile/mateo-rios-picture.png"
-                    alt="Retrato de Mateo Ríos"
-                    width="1254"
-                    height="1254">
-                <h1 class="profile__name">Mateo Ríos</h1>
-                <p class="profile__project">Universo a Escala</p>
-                <p class="profile__description">
-                    Estudio el universo y comparto lo que voy aprendiendo. Astronomía,
-                    exploración espacial y fotografía del cielo para mentes curiosas.
-                </p>
-            </div>
-        </header>
+        <div class="page__layout">
+            <div class="page__identity">
+                <header class="profile">
+                    <div class="profile__cover" aria-hidden="true"></div>
+                    <div class="profile__content">
+                        <img
+                            class="profile__picture"
+                            src="./assets/images/profile/mateo-rios-picture.png"
+                            alt="Retrato de Mateo Ríos"
+                            width="1254"
+                            height="1254">
+                        <h1 class="profile__name">Mateo Ríos</h1>
+                        <p class="profile__project">Universo a Escala</p>
+                        <p class="profile__description">
+                            Estudio el universo y comparto lo que voy aprendiendo. Astronomía,
+                            exploración espacial y fotografía del cielo para mentes curiosas.
+                        </p>
+                    </div>
+                </header>
 
-        <!-- Social links -->
-        <nav class="social-links" aria-label="Redes sociales de Mateo Ríos">
-            <ul class="social-links__list">
-                <li class="social-links__item">
-                    <a
-                        class="social-links__link"
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Visitar Universo a Escala en YouTube (se abre en una pestaña nueva)">
-                        <img class="social-links__icon" src="./assets/icons/youtube.png" alt="" width="32" height="32">
-                        <span class="social-links__text">
-                            <span class="social-links__platform">YouTube</span>
-                            <span class="social-links__description">Videos sobre el universo</span>
-                        </span>
-                        <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
+                <nav class="social-links" aria-label="Redes sociales de Mateo Ríos">
+                    <ul class="social-links__list">
+                        <li class="social-links__item">
+                            <a
+                                class="social-links__link social-links__link--youtube"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visitar Universo a Escala en YouTube (se abre en una pestaña nueva)">
+                                <img class="social-links__icon" src="./assets/icons/youtube.png" alt="" width="32" height="32">
+                                <span class="social-links__text">
+                                    <span class="social-links__platform">YouTube</span>
+                                    <span class="social-links__description">Videos sobre el universo</span>
+                                </span>
+                                <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a
+                                class="social-links__link social-links__link--instagram"
+                                href="https://www.instagram.com/universoaescala/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Seguir a Universo a Escala en Instagram (se abre en una pestaña nueva)">
+                                <img class="social-links__icon" src="./assets/icons/instagram.png" alt="" width="32" height="32">
+                                <span class="social-links__text">
+                                    <span class="social-links__platform">Instagram</span>
+                                    <span class="social-links__description">Fotografías y curiosidades</span>
+                                </span>
+                                <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a
+                                class="social-links__link social-links__link--x"
+                                href="https://x.com/UniversoEscala"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Leer a Universo a Escala en X (se abre en una pestaña nueva)">
+                                <img class="social-links__icon" src="./assets/icons/twitter-x.png" alt="" width="32" height="32">
+                                <span class="social-links__text">
+                                    <span class="social-links__platform">X</span>
+                                    <span class="social-links__description">Noticias y conversaciones</span>
+                                </span>
+                                <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a
+                                class="social-links__link social-links__link--astrobin"
+                                href="https://www.astrobin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Explorar las fotografías de Universo a Escala en AstroBin (se abre en una pestaña nueva)">
+                                <img class="social-links__icon" src="./assets/icons/astrobin.png" alt="" width="32" height="32">
+                                <span class="social-links__text">
+                                    <span class="social-links__platform">AstroBin</span>
+                                    <span class="social-links__description">Fotografía del cielo</span>
+                                </span>
+                                <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="page__story">
+                <section class="video-feature" aria-label="Video destacado">
+                    <video
+                        class="video-feature__player"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="./assets/video/highlight-cover.png"
+                        aria-label="Video destacado de Universo a Escala">
+                        <source src="./assets/video/highlight-video.mp4" type="video/mp4">
+                        <p>
+                            Tu navegador no puede reproducir este video.
+                            <a href="./assets/video/highlight-video.mp4">Abrir el archivo de video</a>.
+                        </p>
+                    </video>
+                </section>
+
+                <section class="gallery" data-carousel aria-labelledby="gallery-title" aria-roledescription="carrusel">
+                    <div class="gallery__heading">
+                        <h2 class="gallery__title" id="gallery-title">Astrofotografía</h2>
+                        <p class="gallery__description">Imágenes del cielo profundo capturadas por Universo a Escala.</p>
+                    </div>
+
+                    <div class="gallery__viewport">
+                        <ul class="gallery__track">
+                            <li
+                                class="gallery__slide carousel__slide carousel__slide--active"
+                                data-carousel-slide
+                                role="group"
+                                aria-roledescription="diapositiva"
+                                aria-label="1 de 6">
+                                <figure class="gallery__figure">
+                                    <img
+                                        class="gallery__image"
+                                        src="./assets/images/photos/nebulosa-carmesi-filamentos-azules.png"
+                                        alt="Nebulosa carmesí atravesada por filamentos azules."
+                                        width="1672"
+                                        height="941"
+                                        fetchpriority="high">
+                                    <figcaption class="gallery__caption">Filamentos azules en una nebulosa carmesí</figcaption>
+                                </figure>
+                            </li>
+                            <li
+                                class="gallery__slide carousel__slide"
+                                data-carousel-slide
+                                role="group"
+                                aria-roledescription="diapositiva"
+                                aria-label="2 de 6">
+                                <figure class="gallery__figure">
+                                    <img
+                                        class="gallery__image"
+                                        src="./assets/images/photos/nebulosa-carmesi-filamentos-estelares.png"
+                                        alt="Nubes carmesí y filamentos brillantes en una nebulosa."
+                                        width="1672"
+                                        height="941"
+                                        loading="lazy">
+                                    <figcaption class="gallery__caption">Filamentos estelares</figcaption>
+                                </figure>
+                            </li>
+                            <li
+                                class="gallery__slide carousel__slide"
+                                data-carousel-slide
+                                role="group"
+                                aria-roledescription="diapositiva"
+                                aria-label="3 de 6">
+                                <figure class="gallery__figure">
+                                    <img
+                                        class="gallery__image"
+                                        src="./assets/images/photos/nebulosa-colores-entre-estrellas.png"
+                                        alt="Nube de colores extendida entre estrellas."
+                                        width="1672"
+                                        height="941"
+                                        loading="lazy">
+                                    <figcaption class="gallery__caption">Colores entre estrellas</figcaption>
+                                </figure>
+                            </li>
+                            <li
+                                class="gallery__slide carousel__slide"
+                                data-carousel-slide
+                                role="group"
+                                aria-roledescription="diapositiva"
+                                aria-label="4 de 6">
+                                <figure class="gallery__figure">
+                                    <img
+                                        class="gallery__image"
+                                        src="./assets/images/photos/nebulosa-cosmica-entre-estrellas.png"
+                                        alt="Nebulosa de tonos cálidos suspendida entre estrellas."
+                                        width="1672"
+                                        height="940"
+                                        loading="lazy">
+                                    <figcaption class="gallery__caption">Nebulosa cósmica entre estrellas</figcaption>
+                                </figure>
+                            </li>
+                            <li
+                                class="gallery__slide carousel__slide"
+                                data-carousel-slide
+                                role="group"
+                                aria-roledescription="diapositiva"
+                                aria-label="5 de 6">
+                                <figure class="gallery__figure">
+                                    <img
+                                        class="gallery__image"
+                                        src="./assets/images/photos/nebulosa-multicolor-espacio-profundo.png"
+                                        alt="Nebulosa multicolor en el espacio profundo."
+                                        width="1672"
+                                        height="941"
+                                        loading="lazy">
+                                    <figcaption class="gallery__caption">Nebulosa multicolor en el espacio profundo</figcaption>
+                                </figure>
+                            </li>
+                            <li
+                                class="gallery__slide carousel__slide"
+                                data-carousel-slide
+                                role="group"
+                                aria-roledescription="diapositiva"
+                                aria-label="6 de 6">
+                                <figure class="gallery__figure">
+                                    <img
+                                        class="gallery__image"
+                                        src="./assets/images/photos/panorama-nebulosas-doradas-estrellas.png"
+                                        alt="Panorama de nebulosas doradas entre estrellas."
+                                        width="1672"
+                                        height="941"
+                                        loading="lazy">
+                                    <figcaption class="gallery__caption">Nebulosas doradas</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="gallery__navigation">
+                        <button
+                            class="gallery__control"
+                            type="button"
+                            data-carousel-action="previous"
+                            aria-label="Ver fotografía anterior"
+                            hidden>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="gallery__pagination"
+                            data-carousel-pagination
+                            role="group"
+                            aria-label="Seleccionar fotografía"
+                            hidden>
+                            <button class="gallery__dot carousel__dot--active" type="button" data-carousel-action="go-to" data-carousel-index="0" aria-label="Ver fotografía 1" aria-current="true"></button>
+                            <button class="gallery__dot" type="button" data-carousel-action="go-to" data-carousel-index="1" aria-label="Ver fotografía 2"></button>
+                            <button class="gallery__dot" type="button" data-carousel-action="go-to" data-carousel-index="2" aria-label="Ver fotografía 3"></button>
+                            <button class="gallery__dot" type="button" data-carousel-action="go-to" data-carousel-index="3" aria-label="Ver fotografía 4"></button>
+                            <button class="gallery__dot" type="button" data-carousel-action="go-to" data-carousel-index="4" aria-label="Ver fotografía 5"></button>
+                            <button class="gallery__dot" type="button" data-carousel-action="go-to" data-carousel-index="5" aria-label="Ver fotografía 6"></button>
+                        </div>
+                        <button
+                            class="gallery__control"
+                            type="button"
+                            data-carousel-action="next"
+                            aria-label="Ver fotografía siguiente"
+                            hidden>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="gallery__status" data-carousel-status aria-live="polite" aria-atomic="true"></p>
+                </section>
+            </div>
+        </div>
+
+        <section class="guides" aria-labelledby="guides-title">
+            <h2 class="guides__title" id="guides-title">Guías para explorar el universo</h2>
+            <ul class="guides__list">
+                <li class="guide">
+                    <img
+                        class="guide__image"
+                        src="./assets/images/ebooks/astronomia-sin-telescopio-como-empezar.png"
+                        alt=""
+                        width="1224"
+                        height="1285"
+                        loading="lazy">
+                    <h3 class="guide__title">Astronomía sin telescopio: cómo empezar</h3>
                 </li>
-                <li class="social-links__item">
-                    <a
-                        class="social-links__link"
-                        href="https://www.instagram.com/universoaescala/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Seguir a Universo a Escala en Instagram (se abre en una pestaña nueva)">
-                        <img class="social-links__icon" src="./assets/icons/instagram.png" alt="" width="32" height="32">
-                        <span class="social-links__text">
-                            <span class="social-links__platform">Instagram</span>
-                            <span class="social-links__description">Fotografías y curiosidades</span>
-                        </span>
-                        <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
+                <li class="guide">
+                    <img
+                        class="guide__image"
+                        src="./assets/images/ebooks/el-sistema-solar-en-perspectiva.png"
+                        alt=""
+                        width="1224"
+                        height="1285"
+                        loading="lazy">
+                    <h3 class="guide__title">El sistema solar en perspectiva</h3>
                 </li>
-                <li class="social-links__item">
-                    <a
-                        class="social-links__link"
-                        href="https://x.com/UniversoEscala"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Leer a Universo a Escala en X (se abre en una pestaña nueva)">
-                        <img class="social-links__icon" src="./assets/icons/twitter-x.png" alt="" width="32" height="32">
-                        <span class="social-links__text">
-                            <span class="social-links__platform">X</span>
-                            <span class="social-links__description">Noticias y conversaciones</span>
-                        </span>
-                        <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-links__item">
-                    <a
-                        class="social-links__link"
-                        href="https://www.astrobin.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Explorar las fotografías de Universo a Escala en AstroBin (se abre en una pestaña nueva)">
-                        <img class="social-links__icon" src="./assets/icons/astrobin.png" alt="" width="32" height="32">
-                        <span class="social-links__text">
-                            <span class="social-links__platform">AstroBin</span>
-                            <span class="social-links__description">Fotografía del cielo</span>
-                        </span>
-                        <svg class="social-links__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
+                <li class="guide">
+                    <img
+                        class="guide__image"
+                        src="./assets/images/ebooks/guia-del-cielo-nocturno-estrellado.png"
+                        alt=""
+                        width="1224"
+                        height="1285"
+                        loading="lazy">
+                    <h3 class="guide__title">Objetos para observar en el cielo nocturno</h3>
                 </li>
             </ul>
-        </nav>
+        </section>
 
-        <!-- Contact -->
         <footer class="footer">
             <p class="footer__label">Contacto</p>
             <a class="footer__link" href="mailto:mateorios26@universoaescala.example">
@@ -118,5 +331,8 @@
             </a>
         </footer>
     </main>
+
+    <script src="./assets/scripts/carousel.js" defer></script>
+    <script src="./assets/scripts/starfield.js" defer></script>
 </body>
 </html>
