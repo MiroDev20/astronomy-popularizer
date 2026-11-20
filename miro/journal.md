@@ -164,7 +164,7 @@ hermanos lo corregiré con CSS.
 
 ### 👣 Próximos pasos
 
-- [ ] Realizar el diseño de la página.
+- [x] Realizar el diseño de la página.
 
 **Próximo objetivo de aprendizaje:** CSS organizado y modularizado, correcto uso
 del nesting y popover.
@@ -189,9 +189,9 @@ ya que cuando atienda varios clientes a la vez necesito ser veloz**
 
 ### 🧭 Plan de trabajo
 
-- [ ] Hablaré con GitHub Copilot sobre como realizarlo con Impeccable.
-- [ ] Le daré algunos detalles que debe tener en cuenta.
-- [ ] Y por último le diré que ejecute el prompt resultante de la charla.
+- [x] Hablaré con GitHub Copilot sobre como realizarlo con Impeccable.
+- [x] Le daré algunos detalles que debe tener en cuenta.
+- [x] Y por último le diré que ejecute el prompt resultante de la charla.
 
 ### 🎧 Lo que escuché en la sesión
 
@@ -250,8 +250,8 @@ antes de publicar una versión con datos reales.
 
 ### 👣 Próximos pasos
 
-- [ ] Crear ramas para las versiones de los planes Personalizado y A medida.
-- [ ] Definir el alcance de cada versión antes de implementarla.
+- [x] Crear ramas para las versiones de los planes Personalizado y A medida.
+- [x] Definir el alcance de cada versión antes de implementarla.
 
 **Próximo objetivo de aprendizaje:** Trabajar con ramas en Git.
 
