@@ -164,7 +164,7 @@ hermanos lo corregiré con CSS.
 
 ### 👣 Próximos pasos
 
-- [ ] Realizar el diseño de la página.
+- [x] Realizar el diseño de la página.
 
 **Próximo objetivo de aprendizaje:** CSS organizado y modularizado, correcto uso
 del nesting y popover.
@@ -189,9 +189,9 @@ ya que cuando atienda varios clientes a la vez necesito ser veloz**
 
 ### 🧭 Plan de trabajo
 
-- [ ] Hablaré con GitHub Copilot sobre como realizarlo con Impeccable.
-- [ ] Le daré algunos detalles que debe tener en cuenta.
-- [ ] Y por último le diré que ejecute el prompt resultante de la charla.
+- [x] Hablaré con GitHub Copilot sobre como realizarlo con Impeccable.
+- [x] Le daré algunos detalles que debe tener en cuenta.
+- [x] Y por último le diré que ejecute el prompt resultante de la charla.
 
 ### 🎧 Lo que escuché en la sesión
 
@@ -250,12 +250,167 @@ antes de publicar una versión con datos reales.
 
 ### 👣 Próximos pasos
 
-- [ ] Crear ramas para las versiones de los planes Personalizado y A medida.
-- [ ] Definir el alcance de cada versión antes de implementarla.
+- [x] Crear ramas para las versiones de los planes Personalizado y A medida.
+- [x] Definir el alcance de cada versión antes de implementarla.
 
 **Próximo objetivo de aprendizaje:** Trabajar con ramas en Git.
 
 **Punto de reanudación:** `index.html` y `assets/styles/main.css`, como base
 para las versiones de los otros planes.
+
+---
+
+## 📅 20-11-26 — Diseño del plan personalizado
+
+### 🎯 Realizar la versión del proyecto para el plan personalizado
+
+**Desarrollaré la versión de la página para el segundo plan de mi servicio de
+Link in Bio, manteniendo las redes sociales como destino principal e
+incorporando contenido destacado.**
+
+- Mantener los cuatro enlaces sociales con la misma importancia.
+- Añadir un video destacado y una galería con las fotografías disponibles.
+- Adaptar la composición a escritorio y móvil sin incluir las guías del plan
+  A medida.
+
+**Criterio de éxito:** La página presenta el perfil, los cuatro enlaces, el
+video con controles nativos y las seis fotografías. La composición es
+responsive, no presenta desbordamiento horizontal y conserva el foco visible,
+el contraste y el soporte para movimiento reducido.
+
+### 🧭 Plan de trabajo
+
+- [x] Definir el alcance del plan Personalizado y conservar los cuatro enlaces
+  sociales con la misma jerarquía.
+- [x] Incorporar el video y las seis imágenes existentes de astrofotografía.
+- [x] Ajustar la distribución de escritorio según la referencia: perfil y
+  redes a la izquierda; video y galería apilados a la derecha.
+- [x] Conservar el orden vertical en pantallas pequeñas y quitar la leyenda que
+  repetía el título de la portada del video.
+- [x] Actualizar la documentación del plan y comprobar la página en distintos
+  anchos.
+
+### 🎧 Lo que escuché en la sesión
+
+- **Álbum o canción:** 【あつ森】星が輝く夜のLofiとちょっとジャズ｜夜にお部屋でゆっくりと過ごす｜集中用｜作業用｜勉強用｜１時間｜ゲーム内の環境音付き
+- **Artista:** Tsumugi's Cozy Tunes
+- **Escuché en:** YouTube
+- **Enlace:** https://www.youtube.com/watch?v=Ez6nXDnON0k
+
+### 🛠️ Trabajo realizado
+
+#### Lo que hice
+
+- Implementé la versión Personalizada en la rama `feat/plan-personalizado`,
+  basada en `main` en el commit `527f7c8`.
+- Añadí un video con controles nativos y seis imágenes de astrofotografía,
+  manteniendo los cuatro enlaces sociales con igual jerarquía y excluyendo las
+  guías.
+- Reorganicé el escritorio en dos columnas: perfil y redes a la izquierda;
+  video arriba y galería debajo a la derecha. En móvil, las secciones se
+  apilan verticalmente.
+- Quité el texto visible que repetía el título de la portada y conservé ese
+  texto como etiqueta accesible del video.
+- Actualicé `PRODUCT.md` y `README.md`. Trabajé con HTML y CSS, apoyándome en
+  Impeccable para el diseño y la revisión.
+
+#### Decisiones técnicas
+
+- **Decisión:** Usar áreas de CSS Grid para ubicar perfil y redes en la columna
+  izquierda, y apilar video y galería en la columna derecha. La galería muestra
+  las seis fotos en una cuadrícula de tres columnas en escritorio.
+- **Motivo:** Esta composición corresponde a la referencia compartida y
+  aprovecha el espacio sin restarle protagonismo al video ni a las redes.
+- **Alternativas:** Probé una composición con la galería en una tercera
+  columna, pero no coincidía con la distribución buscada. También descarté
+  carrusel, lightbox y guías para mantener la galería simple y no agregar
+  interacciones fuera del alcance.
+
+#### Evidencia del progreso
+
+- **Commit:** `598ac5b1a7263c22b68d97adf8b16bc3adb47ef8`
+- **Captura o demo:** ![vista plan personalizado](./assets/images/custom-view.png)
+
+#### Recursos consultados
+
+- Impeccable — Lo utilicé para orientar las decisiones de composición y revisar
+  el resultado. No consulté recursos externos.
+
+### 🚧 Dificultades y experimentos
+
+#### Problema o pregunta
+
+La primera propuesta colocaba la galería al lado del video. La referencia que
+compartí aclaró que quería el perfil y las redes en un bloque izquierdo, con el
+video y la galería apilados en la columna derecha.
+
+![referencia](./assets/images/distribution-reference.png)
+
+**Qué intenté:**
+
+- Probé una composición de tres columnas y luego reorganicé el Grid para dejar
+  el video arriba de la galería.
+- Al revisar el video con una URL `file://`, el navegador no pudo cargarlo;
+  serví la página localmente por HTTP para comprobar los medios.
+
+**Qué ocurrió:**
+
+La composición final coincidió con la referencia. Con el servidor local, el
+video cargó correctamente y también se cargaron las seis imágenes.
+
+**Causa identificada:**
+
+La primera distribución interpretaba la ubicación de la galería de otra
+manera. El fallo del video se limitó a la prueba mediante `file://`; la página
+funcionó al servirla por HTTP local.
+
+**Solución o conclusión:**
+
+Ajusté las áreas de Grid a la referencia y mantuve la galería estática. Para
+comprobar recursos multimedia locales, usé un servidor HTTP local.
+
+**Estado:** Resuelto.
+
+### 🧪 Comprobación del resultado
+
+**¿Cómo comprobé que funciona?**
+
+- [x] Probé el comportamiento esperado: video con controles nativos y seis
+  fotografías cargadas.
+- [x] Revisé el foco de teclado, el contraste de los enlaces y el movimiento
+  reducido.
+- [x] Comprobé la versión responsive en 320, 390, 768, 1024, 1280, 1365 y
+  1440 píxeles; no encontré desbordamiento horizontal.
+- [ ] Revisé la consola por separado. La comprobación visual y de recursos se
+  hizo en el navegador local.
+- [x] El detector de diseño no reportó hallazgos y
+  `git -c core.whitespace=cr-at-eol diff --check` pasó.
+
+**Resultado observado:** El video y las seis imágenes cargaron en la prueba
+local. El diseño mantuvo el orden esperado en escritorio y móvil. No guardé
+una captura final ni hice un commit.
+
+### ✅ Cierre de la sesión
+
+**Resultado concreto:** La versión Personalizada de la página Link in Bio,
+  con cuatro enlaces sociales, video, galería de seis fotografías y diseño
+  responsive.
+
+**Estado del proyecto tras la sesión:** La demostración está implementada en
+  `feat/plan-personalizado`, probada localmente y sin commit.
+
+**Deuda técnica o mejora futura:** Confirmar los destinos de YouTube y AstroBin
+  y reemplazar el correo de ejemplo antes de publicar.
+
+### 👣 Próximos pasos
+
+- [ ] Confirmar los destinos y el correo que se usarán en la publicación.
+- [ ] Continuar con la versión del plan A Medida en su propia rama.
+
+**Próximo objetivo de aprendizaje:** Seguir practicando diseño responsive con
+CSS Grid y trabajar con la rama del plan A Medida.
+
+**Punto de reanudación:** `index.html` y `assets/styles/main.css` en la rama
+`feat/plan-personalizado`.
 
 ---
