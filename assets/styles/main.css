@@ -28,6 +28,8 @@
 
     background: #0b1026;
     color: #eaf4ff;
+    scrollbar-color: #345177 #0b1026;
+    scrollbar-width: thin;
 }
 
 * {
@@ -49,8 +51,17 @@ body {
 }
 
 .page {
-    width: min(100%, 35rem);
+    width: min(100%, 72rem);
     margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-areas:
+        "profile highlight"
+        "social gallery"
+        "footer footer";
+    column-gap: clamp(2rem, 5vw, 4rem);
+    row-gap: 2.5rem;
 }
 
 /* ============================================================
@@ -58,7 +69,7 @@ body {
    ============================================================ */
 
 .profile__cover {
-    height: 10.5rem;
+    height: 13rem;
 
     background:
         linear-gradient(180deg, transparent 10%, #0b1026 100%),
@@ -69,21 +80,25 @@ body {
 .profile__content {
     position: relative;
 
-    margin-top: -3.5rem;
+    margin-top: -4rem;
     padding: 0 1rem;
 
     text-align: center;
 }
 
 .profile__picture {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
     display: block;
     margin: 0 auto 1rem;
 
     border: 2px solid #EAF4FF;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.profile {
+    grid-area: profile;
 }
 
 .profile__name {
@@ -118,7 +133,7 @@ body {
    ============================================================ */
 
 .social-links {
-    margin-top: 1.75rem;
+    grid-area: social;
 }
 
 .social-links__list {
@@ -199,10 +214,80 @@ body {
 }
 
 /* ============================================================
+   FEATURED VIDEO
+   ============================================================ */
+
+.highlight {
+    grid-area: highlight;
+    align-self: center;
+}
+
+.highlight__title,
+.gallery__title {
+    margin: 0 0 1rem;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+}
+
+.highlight__figure {
+    margin: 0;
+}
+
+.highlight__video {
+    width: 100%;
+    display: block;
+
+    aspect-ratio: 16 / 9;
+    background: #070b18;
+    border: 1px solid #345177;
+    border-radius: 1rem;
+}
+
+/* ============================================================
+   ASTROPHOTOGRAPHY
+   ============================================================ */
+
+.gallery {
+    grid-area: gallery;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: clamp(6rem, 9vw, 8rem);
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.gallery__item {
+    min-width: 0;
+    overflow: hidden;
+
+    background: #142b52;
+    border-radius: 0.875rem;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+}
+
+/* ============================================================
    CONTACT
    ============================================================ */
 
 .footer {
+    grid-area: footer;
     padding: 2rem 0 0.5rem;
 
     text-align: center;
@@ -231,6 +316,33 @@ body {
    RESPONSIVE AND MOTION
    ============================================================ */
 
+@media (max-width: 52rem) {
+    .page {
+        width: min(100%, 35rem);
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "profile"
+            "social"
+            "highlight"
+            "gallery"
+            "footer";
+        row-gap: 2rem;
+    }
+
+    .profile__cover {
+        height: 10.5rem;
+    }
+
+    .profile__content {
+        margin-top: -3.5rem;
+    }
+
+    .profile__picture {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
 @media (max-width: 30rem) {
     body {
         padding: 0 1rem 1.5rem;
@@ -241,6 +353,49 @@ body {
         margin: 0 -1rem;
 
         border-radius: 0;
+    }
+
+    .gallery__grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-auto-rows: clamp(7rem, 20vw, 10rem);
+    }
+
+    .gallery__item:first-child {
+        grid-column: span 4;
+    }
+
+    .gallery__item:nth-child(2),
+    .gallery__item:nth-child(3),
+    .gallery__item:nth-child(4),
+    .gallery__item:nth-child(5),
+    .gallery__item:nth-child(6) {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 30rem) {
+    .gallery__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: clamp(7rem, 38vw, 10rem);
+    }
+
+    .gallery__item:first-child,
+    .gallery__item:last-child {
+        grid-column: 1 / -1;
+        grid-row: span 1;
+    }
+
+    .gallery__item:nth-child(2),
+    .gallery__item:nth-child(3),
+    .gallery__item:nth-child(4),
+    .gallery__item:nth-child(5) {
+        grid-column: span 1;
+    }
+}
+
+@media (min-width: 80rem) {
+    .page {
+        width: min(100%, 80rem);
     }
 }
 
