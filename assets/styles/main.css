@@ -156,8 +156,7 @@ body {
     transform: translateY(0);
 }
 
-.social-links__link:focus-visible,
-.footer__link:focus-visible {
+.social-links__link:focus-visible {
     outline: 3px solid #00d9ff;
     outline-offset: 3px;
 }
@@ -196,35 +195,6 @@ body {
     margin-left: auto;
 
     color: #9cbbd8;
-}
-
-/* ============================================================
-   CONTACT
-   ============================================================ */
-
-.footer {
-    padding: 2rem 0 0.5rem;
-
-    text-align: center;
-}
-
-.footer__label {
-    margin: 0 0 0.375rem;
-
-    color: #c4d2e7;
-    font-size: 0.8125rem;
-}
-
-.footer__link {
-    color: #eaf4ff;
-    font-size: 0.8125rem;
-    overflow-wrap: anywhere;
-    text-decoration-color: #6684a7;
-    text-underline-offset: 0.2em;
-}
-
-.footer__link:hover {
-    color: #7ee8f8;
 }
 
 /* ============================================================
